@@ -1,11 +1,8 @@
 package view;
-import java.awt.Toolkit;
+
 public class Index extends javax.swing.JFrame {
     public Index() {
-        initComponents();
-        
-        Utilitarios u = new Utilitarios();
-        u.inserirIcone(this);
+        initComponents();    
     }
     
     @SuppressWarnings("unchecked")
@@ -22,6 +19,7 @@ public class Index extends javax.swing.JFrame {
         lblCombo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Lucario Clicker");
 
         pnlPrincipal.setBackground(new java.awt.Color(40, 89, 122));
 
