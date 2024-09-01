@@ -1,8 +1,11 @@
 package view;
-
+import java.awt.Toolkit;
 public class Index extends javax.swing.JFrame {
     public Index() {
         initComponents();
+        
+        Utilitarios u = new Utilitarios();
+        u.inserirIcone(this);
     }
     
     @SuppressWarnings("unchecked")
@@ -146,7 +149,7 @@ public class Index extends javax.swing.JFrame {
     private void btnZerarPontosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnZerarPontosActionPerformed
         contaPontos = 0;
         
-        lblPontuacao.setText("");
+        lblPontuacao.setText("0");
         lblConquista.setText("");
         lblCombo.setText("");
     }//GEN-LAST:event_btnZerarPontosActionPerformed
